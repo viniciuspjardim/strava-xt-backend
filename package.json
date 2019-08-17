@@ -14,7 +14,7 @@
     "strava",
     "extension"
   ],
-  "author": "Vinícius P. Jardim",
+  "author": "Vinícius P. Jardim <viniciuspjardim@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/viniciuspjardim/strava-edit-server/issues"
