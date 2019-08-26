@@ -23,7 +23,20 @@ router.get('/', (req, res) => {
 
   if(req.query.page) opts.page = req.query.page;
 
-  strava.athlete.listActivities(opts, function(err, payload, limits) {
+  strava.athlete.listActivities(opts, function(err, payload) {
+    if(!err) {
+      res.send(payload);
+    }
+    else {
+      console.log(err);
+      res.send(err);
+    }
+  });
+});
+
+router.get('/:id', (req, res) => {
+
+  strava.activities.get({ id: req.params.id }, function(err, payload) {
     if(!err) {
       res.send(payload);
     }
