@@ -4,7 +4,10 @@ const strava = require('strava-v3');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  strava.athlete.get({}, (err, payload) => {
+
+  const opts = { access_token: req.stravaToken };
+
+  strava.athlete.get(opts, (err, payload) => {
     if(!err) {
       res.send(payload);
     }

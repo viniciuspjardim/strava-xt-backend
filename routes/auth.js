@@ -19,15 +19,13 @@ router.get('/', (req, res) => {
   strava.oauth.getToken(req.query.code, (err, payload) => {
     if(!err && payload.access_token) {
       const jwtToken = jwt.sign(
-        {
-          strava: payload
-        },
+        { ...payload },
         config.get('jwtPrivateKey')
       );
+
       res.header('x-auth-token', jwtToken).send('Connected to Strava');
     }
     else {
-      console.log(err);
       return res.status(401).send('Strava authentication failed');
     }
   });

@@ -6,6 +6,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
 
   const opts = {
+    access_token: req.stravaToken,
     before: req.query.before,
     after: req.query.after,
     page: 1,
@@ -28,7 +29,12 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
 
-  strava.activities.get({ id: req.params.id }, (err, payload) => {
+  const opts = {
+    access_token: req.stravaToken,
+    id: req.params.id
+  };
+
+  strava.activities.get(opts, (err, payload) => {
     if(!err) {
       res.send(payload);
     }
