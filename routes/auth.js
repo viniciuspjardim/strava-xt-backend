@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/stravalogin', (req, res) => {
   const url = strava.oauth.getRequestAccessURL({});
-  res.redirect(url);
+  res.send({ url: url });
 });
 
 router.get('/', (req, res) => {
