@@ -6,6 +6,7 @@ Edit multiple activities in Strava.
 
 The following environment variables must be set to run the app:
 
+- `STRAVA_ACCESS_TOKEN` = `access_token`;
 - `STRAVA_CLIENT_ID` = `client_id`;
 - `STRAVA_CLIENT_SECRET` = `client_secret`;
 - `STRAVA_REDIRECT_URI` - The URI of the frontend app to redirect the user after he grants access to this app in the Strava website;
