@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     before: req.query.before,
     after: req.query.after,
     page: 1,
-    per_page: 10
+    per_page: 30
   };
 
   if(req.query.page) opts.page = req.query.page;
