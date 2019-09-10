@@ -5,6 +5,7 @@ const auth = require('../routes/auth');
 const validateAuth = require('../middleware/auth');
 const athlete = require('../routes/athlete');
 const activities = require('../routes/activities');
+const streams = require('../routes/streams');
 
 module.exports = function(app) {
   app.use(express.json());
@@ -12,5 +13,6 @@ module.exports = function(app) {
   app.use('/api/auth', auth);
   app.use('/api/athlete', validateAuth, athlete);
   app.use('/api/activities', validateAuth, activities);
+  app.use('/api/streams', validateAuth, streams);
   app.use(error);
 };
