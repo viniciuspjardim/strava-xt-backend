@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 router.get('/stravalogin', (req, res) => {
-  const url = strava.oauth.getRequestAccessURL({});
+  const url = strava.oauth.getRequestAccessURL({scope:"activity:read_all,activity:write"});
   res.send({ url: url });
 });
 
@@ -17,9 +17,9 @@ router.get('/', (req, res) => {
   }
 
   strava.oauth.getToken(req.query.code, (err, payload) => {
-    if(!err && payload.access_token) {
+    if(!err && payload.body.access_token) {
       const jwtToken = jwt.sign(
-        { ...payload },
+        { ...payload.body },
         config.get('jwtPrivateKey')
       );
 

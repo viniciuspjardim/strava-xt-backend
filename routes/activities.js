@@ -7,13 +7,13 @@ router.get('/', (req, res) => {
 
   const opts = {
     access_token: req.stravaToken,
-    before: req.query.before,
-    after: req.query.after,
     page: 1,
     per_page: 30
   };
 
   if(req.query.page) opts.page = req.query.page;
+  if(req.query.before) opts.before = req.query.before;
+  if(req.query.after) opts.after = req.query.after;
 
   // Test error here
   strava.athlete.listActivities(opts, (err, payload) => {
