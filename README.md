@@ -1,6 +1,6 @@
-# Strava Edit - Server
+# Strava XT - Back-end
 
-Edit multiple activities in Strava.
+Compare multiple activities in Strava.
 
 ## Config
 

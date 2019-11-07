@@ -1,14 +1,14 @@
 {
-  "name": "strava-edit-server",
+  "name": "strava-xt-backend",
   "version": "0.1.0",
-  "description": "Edit multiple activities in Strava",
+  "description": "Compare multiple activities in Strava",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viniciuspjardim/strava-edit-server.git"
+    "url": "git+https://github.com/viniciuspjardim/strava-xt-backend.git"
   },
   "keywords": [
     "strava",
@@ -17,9 +17,9 @@
   "author": "Vinícius P. Jardim <viniciuspjardim@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/viniciuspjardim/strava-edit-server/issues"
+    "url": "https://github.com/viniciuspjardim/strava-xt-backend/issues"
   },
-  "homepage": "https://github.com/viniciuspjardim/strava-edit-server#readme",
+  "homepage": "https://github.com/viniciuspjardim/strava-xt-backend#readme",
   "dependencies": {
     "config": "^3.2.2",
     "cors": "^2.8.5",
