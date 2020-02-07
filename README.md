@@ -15,7 +15,7 @@ and draw the elevation data using
 Multiple activities can be selected at the same time. They
 are plotted in the same map and in the same charts for comparison.
 
-> This repository is the back-end part of the app. Visit the [front-end project](https://github.com/viniciuspjardim/strava-xt-frontend) for a better overview.
+> This repository is the backend part of the app. Visit the [frontend project](https://github.com/viniciuspjardim/strava-xt-frontend) for a better overview.
 
 ## Config and running
 
