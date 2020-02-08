@@ -15,17 +15,20 @@ and draw the elevation data using
 Multiple activities can be selected at the same time. They
 are plotted in the same map and in the same charts for comparison.
 
-> This repository is the backend part of the app. Visit the [frontend project](https://github.com/viniciuspjardim/strava-xt-frontend) for a better overview.
+> This repository is the backend part of the app. Visit the
+[frontend project](https://github.com/viniciuspjardim/strava-xt-frontend)
+for a better overview.
 
 ## Config and running
 
 The following environment variables must be set to run the app:
 
-- `STRAVA_ACCESS_TOKEN` = `access_token`;
-- `STRAVA_CLIENT_ID` = `client_id`;
-- `STRAVA_CLIENT_SECRET` = `client_secret`;
-- `STRAVA_REDIRECT_URI` - The URI of the frontend app to redirect the user after he grants access to this app in the Strava website;
-- `STRAVA_JWT_PRIVATE_KEY` - A user defined private key to generate the JSON Web Token.
+- `STXT_ACCESS_TOKEN` = `access_token`;
+- `STXT_CLIENT_ID` = `client_id`;
+- `STXT_CLIENT_SECRET` = `client_secret`;
+- `STXT_REDIRECT_URI` - The URI of the frontend app to redirect the user after he grants
+access to this app in the Strava website;
+- `STXT_JWT_PRIVATE_KEY` - A user defined private key to generate the JSON Web Token.
 
 > You can find these variables at [Strava API Settings](https://www.strava.com/settings/api).
 
@@ -44,4 +47,5 @@ To run the project use:
 npm run dev
 ```
 
-For more help visit [Strava API Documentation](https://developers.strava.com) and [Strava V3 project](https://github.com/UnbounDev/node-strava-v3#readme).
+For more help visit [Strava API Documentation](https://developers.strava.com) and
+[Strava V3 project](https://github.com/UnbounDev/node-strava-v3#readme).

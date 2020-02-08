@@ -7,6 +7,7 @@ require('./startup/loggin')();
 require('./startup/cors')(app);
 require('./startup/routes')(app);
 require('./startup/config')();
+require('./startup/strava');
 
 // Set a env (PORT) var in Windows PowerShell: $env:PORT = 5000
 const PORT = process.env.PORT || config.get('port');
