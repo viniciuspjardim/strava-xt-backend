@@ -21,6 +21,9 @@
     "url": "https://github.com/viniciuspjardim/strava-xt-backend/issues"
   },
   "homepage": "https://github.com/viniciuspjardim/strava-xt-backend#readme",
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "config": "^3.2.2",
     "cors": "^2.8.5",
