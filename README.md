@@ -32,13 +32,13 @@ If you use the JSON file you can see the file `default.json.example` as an examp
 
 Values (*JSON file* / *environment variable*):
 
-- `port` / `STXT_PORT` - The port that the API will listen for requests;
-- `jwtPrivateKey` / `STXT_JWT_PRIVATE_KEY` - A user defined private key to generate
+- `port` / `STXT_PORT` - the port that the API will listen for requests;
+- `jwtPrivateKey` / `STXT_JWT_PRIVATE_KEY` - a user defined private key to generate
 the JSON Web Token;
 - `stravaClientId` / `STXT_CLIENT_ID` - the Strava `client_id`;
 - `stravaClientSecret` / `STXT_CLIENT_SECRET` - the Strava `client_secret`;
 - `stravaAccessToken` / `STXT_ACCESS_TOKEN` - the Strava `access_token`;
-- `stravaRedirectUri` / `STXT_REDIRECT_URI` - The URI of the frontend app to redirect
+- `stravaRedirectUri` / `STXT_REDIRECT_URI` - the URI of the frontend app to redirect
 the user after he grants access to this app in the Strava website.
 
 > You can find the Strava variables at
