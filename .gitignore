@@ -10,7 +10,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 build/Release
 
 # Dependency directories
-node_modules/
+node_modules
 
 # Optional npm cache directory
 .npm
@@ -20,3 +20,6 @@ node_modules/
 
 # Optional eslint cache
 .eslintcache
+
+# This file contain sensitive information, it must be ignored
+config/default.json

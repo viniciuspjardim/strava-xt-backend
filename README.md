@@ -21,31 +21,35 @@ for a better overview.
 
 ## Config and running
 
-The following environment variables must be set to run the app:
-
-- `STXT_ACCESS_TOKEN` = `access_token`;
-- `STXT_CLIENT_ID` = `client_id`;
-- `STXT_CLIENT_SECRET` = `client_secret`;
-- `STXT_REDIRECT_URI` - The URI of the frontend app to redirect the user after he grants
-access to this app in the Strava website;
-- `STXT_JWT_PRIVATE_KEY` - A user defined private key to generate the JSON Web Token.
-
-> You can find these variables at [Strava API Settings](https://www.strava.com/settings/api).
-
 Clone the project, switch to the project folder and run:
 ```shell
 npm install
 ```
 
-Install nodemon globaly:
-```shell
-npm install -g nodemon
-```
+You will need some values to configure the API. You can either create a
+`default.json` inside the `config` folder or set them as environment variables.
+If you use the JSON file you can see the file `default.json.example` as an example.
 
-To run the project use:
+Values (*JSON file* / *environment variable*):
+
+- `port` / `STXT_PORT` - The port that the API will listen for requests;
+- `jwtPrivateKey` / `STXT_JWT_PRIVATE_KEY` - A user defined private key to generate
+the JSON Web Token;
+- `stravaClientId` / `STXT_CLIENT_ID` - the Strava `client_id`;
+- `stravaClientSecret` / `STXT_CLIENT_SECRET` - the Strava `client_secret`;
+- `stravaAccessToken` / `STXT_ACCESS_TOKEN` - the Strava `access_token`;
+- `stravaRedirectUri` / `STXT_REDIRECT_URI` - The URI of the frontend app to redirect
+the user after he grants access to this app in the Strava website.
+
+> You can find the Strava variables at
+[Strava API Settings](https://www.strava.com/settings/api). Environment variables will
+override their equivalent in the JSON file.
+
+Then run the project using:
 ```shell
 npm run dev
 ```
 
-For more help visit [Strava API Documentation](https://developers.strava.com) and
-[Strava V3 project](https://github.com/UnbounDev/node-strava-v3#readme).
+Visit [Strava API Documentation](https://developers.strava.com) and
+[Strava V3 project](https://github.com/UnbounDev/node-strava-v3#readme) for the
+official documentation.

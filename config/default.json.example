@@ -1,0 +1,9 @@
+{
+  "port": "3000",
+  "jwtPrivateKey": "your private key",
+
+  "stravaClientId":     "your strava CLIENT_ID",
+  "stravaClientSecret": "your strava CLIENT_SECRET",
+  "stravaAccessToken":  "your strava ACCESS_TOKEN",
+  "stravaRedirectUri":  "http://localhost:8080/auth"
+}

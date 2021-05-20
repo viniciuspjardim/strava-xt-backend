@@ -1,7 +1,9 @@
 {
-  "stravaAccessToken":  "STXT_ACCESS_TOKEN",
+  "port":               "STXT_PORT",
+  "jwtPrivateKey":      "STXT_JWT_PRIVATE_KEY",
+
   "stravaClientId":     "STXT_CLIENT_ID",
   "stravaClientSecret": "STXT_CLIENT_SECRET",
-  "stravaRedirectUri":  "STXT_REDIRECT_URI",
-  "jwtPrivateKey":      "STXT_JWT_PRIVATE_KEY"
+  "stravaAccessToken":  "STXT_ACCESS_TOKEN",
+  "stravaRedirectUri":  "STXT_REDIRECT_URI"
 }
